@@ -7,8 +7,8 @@ import prismadb from '@/lib/prismadb'
 export default NextAuth({
     providers : [
         Credentials({
-            id : 'credenitals',
-            name : 'Credenitials',
+            id : 'credentials',
+            name : 'Credentials',
             credentials : {
                 email : {
                     label : 'Email',
