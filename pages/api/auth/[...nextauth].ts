@@ -2,24 +2,36 @@ import NextAuth from "next-auth/next";
 import Credentials from "next-auth/providers/credentials";
 import { compare } from 'bcrypt';
 
+import GithubProvider from 'next-auth/providers/github'
+import GoogleProvider from 'next-auth/providers/google'
+
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+
 import prismadb from '@/lib/prismadb'
 
 export default NextAuth({
     providers : [
+        GithubProvider({
+            clientId : process.env.GITHUB_ID || '',
+            clientSecret : process.env.GITHUB_SECRET || '',
+        }),
+        GoogleProvider({
+            clientId : process.env.GOOGLE_CLIENT_ID || '',
+            clientSecret : process.env.GOOGLE_CLIENT_SECRET || '',
+        }),
         Credentials({
-            id : 'credentials',
-            name : 'Credentials',
-            credentials : {
-                email : {
-                    label : 'Email',
-                    type : 'text',
-                },
-                password : {
-                    label : 'Password',
-                    type : 'password'
-                }
+            id: 'credentials',
+            name: 'Credentials',
+            credentials: {
+              email: {
+                label: 'Email',
+                type: 'text',
+              },
+              password: {
+                label: 'Password',
+                type: 'passord'
+              }
             },
-
             async authorize(credentials) {
                 //이메일 or 비밀번호 미입력시
                 if(!credentials?.email || !credentials?.password){
@@ -57,6 +69,7 @@ export default NextAuth({
         signIn : '/auth',
     },
     debug : process.env.NODE_ENV === 'development', //오류 발생시 로그표시
+    adapter : PrismaAdapter(prismadb),
     session : {
         strategy : 'jwt',
     },
