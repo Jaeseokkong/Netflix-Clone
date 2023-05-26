@@ -6,6 +6,8 @@ import prismadb from '@/lib/prismadb';
 //서버 세션확인
 const serverAuth = async (req : NextApiRequest) => {
     const session = await getSession({ req });
+    
+    console.log(JSON.stringify(session));
 
     //세션에 유저 이메일 정보 없을 겨우
     if(!session?.user?.email) {
