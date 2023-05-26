@@ -60,7 +60,7 @@ const Navbar = () => {
                 ">
                     <NavbarItem label="홈"/>
                     <NavbarItem label="시리즈"/>
-                    <NavbarItem label="New!요즘 대세 콘텐츠"/>
+                    <NavbarItem label="NEW!요즘 대세 콘텐츠"/>
                     <NavbarItem label="내가 찜한 콘텐츠"/>
                     <NavbarItem label="언어별로 찾아보기"/>
                 </div>

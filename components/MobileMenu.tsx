@@ -19,7 +19,7 @@ const MobileMenu : React.FC<MobileMenuProps> = ({ visible }) => {
                     시리즈
                 </div>
                 <div className='px-3 text-center text-white hover:underline'>
-                    New!요즘 대세 콘텐츠
+                    NEW!요즘 대세 콘텐츠
                 </div>
                 <div className='px-3 text-center text-white hover:underline'>
                     내가 찜한 콘텐츠
