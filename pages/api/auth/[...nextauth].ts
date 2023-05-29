@@ -1,15 +1,12 @@
-import NextAuth from "next-auth/next";
-import Credentials from "next-auth/providers/credentials";
+import NextAuth, { AuthOptions } from 'next-auth';
+import GithubProvider from 'next-auth/providers/github';
+import GoogleProvider from 'next-auth/providers/google';
+import CredentialsProvider from 'next-auth/providers/credentials';
+import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import { compare } from 'bcrypt';
+import prismadb from '@/lib/prismadb';
 
-import GithubProvider from 'next-auth/providers/github'
-import GoogleProvider from 'next-auth/providers/google'
-
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-
-import prismadb from '@/lib/prismadb'
-
-export default NextAuth({
+export const authOptions : AuthOptions = {
     providers : [
         GithubProvider({
             clientId : process.env.GITHUB_ID || '',
@@ -19,20 +16,21 @@ export default NextAuth({
             clientId : process.env.GOOGLE_CLIENT_ID || '',
             clientSecret : process.env.GOOGLE_CLIENT_SECRET || '',
         }),
-        Credentials({
+        CredentialsProvider({
             id: 'credentials',
             name: 'Credentials',
             credentials: {
               email: {
                 label: 'Email',
-                type: 'text',
+                type: 'email',
               },
               password: {
                 label: 'Password',
-                type: 'passord'
-              }
+                type: 'password'
+              },              
             },
             async authorize(credentials) {
+
                 //이메일 or 비밀번호 미입력시
                 if(!credentials?.email || !credentials?.password){
                     throw new Error("이메일과 비밀번호를 입력해주세요.")
@@ -77,4 +75,6 @@ export default NextAuth({
         secret : process.env.NEXTAUTH_JWT_SECRET
     },
     secret : process.env.NEXTAUTH_SECRET,
-})
+};
+
+export default NextAuth(authOptions);
