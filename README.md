@@ -54,7 +54,7 @@ npm run dev
 ## 화면 구성 💻
 |로그인 & 간편 로그인|반응형|
 |---|---|
-|<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/b95791dc-3629-4e0c-a7a1-c4e5a0d2233c" width="50%"/>
+<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/b95791dc-3629-4e0c-a7a1-c4e5a0d2233c" width="50%"/>
 |<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/47da9216-6768-4e6c-9246-21480213c6c8" width="50%"/>|
 
 
