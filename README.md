@@ -1,3 +1,12 @@
+# Netflix Clone Project
+## 배포 주소
+https://netflix-clone-orpin-chi.vercel.app/
+
+## 프로젝트 소개
+Netfilx를 클론 코딩하여
+React, Next.js, NextAuth, MongoDB, Prisma
+를 활용한 웹 사이트를 구축하여 Vercel에 배포
+
 ## 개요
 ### Infomation
 넥플릭스 클론 코딩
@@ -7,6 +16,23 @@ Next js를 활용하여
 ### Requirements
 For builng and running the application you need:
  - Node.js 16.10.0
+
+### Installation
+```
+git clone https://github.com/Jaeseokkong/Netflix-Clone.git
+```
+
+## Backend
+```
+npm install
+prisma generate
+```
+
+## Frontend
+```
+npm install
+npm run dev
+```
 
 ## Stacks🕹
 ### Environment
@@ -24,6 +50,14 @@ For builng and running the application you need:
 
 ### Communication
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
+
+## 화면 구성 💻
+|로그인 및 영화 정보 가져오기|
+|---|
+|![Uploading login_logout.gif…]()|
+
+
+
 
 ## 아키텍쳐
 ### 디렉토리 구조
