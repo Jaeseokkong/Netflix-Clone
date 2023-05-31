@@ -58,8 +58,8 @@ npm run dev
 |![responsive](https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/47da9216-6768-4e6c-9246-21480213c6c8)|
 |영상 리스트|영상 재생|
 |---|---|
-|![movie_list_new](https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/4e12bc30-e701-47c0-82b5-9e60761f8507)|
-![movie_play_new](https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/335c3453-6b71-4bfd-ba70-45cc9bf3cd24)|
+|![movie_list_new](https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/4e12bc30-e701-47c0-82b5-9e60761f8507)
+|![movie_play_new](https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/335c3453-6b71-4bfd-ba70-45cc9bf3cd24)|
 
 
 ## 아키텍쳐
