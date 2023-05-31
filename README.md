@@ -52,10 +52,12 @@ npm run dev
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
 
 ## 화면 구성 💻
-|로그인 및 영화 정보 가져오기|
+|로그인 & 간편 로그인|
 |---|
-|![Uploading login_logout.gif…]()|
-
+|![login_logout](https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/b95791dc-3629-4e0c-a7a1-c4e5a0d2233c)|
+|영상 리스트|영상 재생|
+|---|---|
+|||
 
 
 
