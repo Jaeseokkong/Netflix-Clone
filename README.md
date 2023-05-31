@@ -53,7 +53,7 @@ npm run dev
 
 ## 화면 구성 💻
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
+|----------|:-------:|------:|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
@@ -61,8 +61,8 @@ npm run dev
 
 |로그인 & 간편 로그인|       반응형      |
 |---|---|
-|<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/b95791dc-3629-4e0c-a7a1-c4e5a0d2233c" width="40%"/>
-|<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/47da9216-6768-4e6c-9246-21480213c6c8" width="40%"/>|
+|<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/b95791dc-3629-4e0c-a7a1-c4e5a0d2233c" width="100%"/>
+|<img src="https://github.com/Jaeseokkong/Netflix-Clone/assets/115916829/47da9216-6768-4e6c-9246-21480213c6c8" width="100%"/>|
 
 
 |영상 리스트|
