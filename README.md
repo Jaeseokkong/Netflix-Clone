@@ -34,17 +34,55 @@ netfilx-clone
 ├─ app
 │  ├─ favicon.ico
 │  └─ layout.tsx
-├─ components
-│  └─ input.tsx
+├─ components ()
+│  ├─ AccountMenu.tsx
+│  ├─ Billboard.tsx
+│  ├─ FavoriteButton.tsx
+│  ├─ InfoModal.tsx
+│  ├─ input.tsx
+│  ├─ MobileMenu.tsx
+│  ├─ MovieCard.tsx
+│  ├─ MovieList.tsx
+│  ├─ Navbar.tsx
+│  ├─ NavbarItem.tsx
+│  └─ PlayButton.tsx
+├─ global.d.ts
+├─ hooks (재사용 Rest api)
+│  ├─ useBillboard.ts 
+│  ├─ useFavorites.ts
+│  ├─ useInfoModal.ts
+│  ├─ useMovie.ts
+│  ├─ useMovieList.ts
+│  └─ userCurrentUser.ts
+├─ lib
+│  ├─ fetcher.ts
+│  ├─ prismadb.ts  (DB 정보)
+│  └─ serverAuth.ts (로그인 유저 권한 정보)
 ├─ next.config.js
 ├─ package-lock.json
 ├─ package.json
 ├─ pages
-│  ├─ auth.tsx
-│  ├─ index.tsx
+│  ├─ api
+│  │  ├─ auth
+│  │  │  └─ [...nextauth].ts 
+│  │  ├─ current.ts
+│  │  ├─ favorite.ts
+│  │  ├─ favorites.ts
+│  │  ├─ movies
+│  │  │  ├─ index.ts
+│  │  │  └─ [movieId].ts
+│  │  ├─ random.ts
+│  │  └─ register.ts
+│  ├─ auth.tsx : 로그인 페이지
+│  ├─ index.tsx : 메인 페이지
+│  ├─ profiles.tsx : 개인 정보
 │  ├─ test.tsx
+│  ├─ watch
+│  │  └─ [movieId].tsx
 │  └─ _app.js
 ├─ postcss.config.js
+├─ prisma
+│  └─ schema.prisma : 스키마 정보
 ├─ public
 │  ├─ images
 │  │  ├─ default-blue.png
@@ -62,4 +100,5 @@ netfilx-clone
 │  └─ globals.css
 ├─ tailwind.config.js
 └─ tsconfig.json
+
 ```
